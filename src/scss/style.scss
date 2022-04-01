@@ -88,10 +88,6 @@
 .about{
   padding-bottom: 80px;
   &-title{
-    font-size: 32px;
-    line-height: 100%;
-    font-weight: 700;
-    max-width: 400px;
     padding-bottom: 40px; 
   }
   &-block{
@@ -122,6 +118,41 @@
       &--dscr{
         line-height: 140%;
       }
+    }
+  }
+}
+
+.stage{
+  &-block{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px 30px;
+  }
+  &-item{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 10px 20px rgba(116, 18, 18, 0.05));
+    border-radius: 6px;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
+    &:hover{
+      background: $color-red;
+    }
+    &__title{
+      text-align: left;
+    }
+    &__counter{
+      position: absolute;
+      right: 20px;
+      top: 0;
+      font-size: 32px;
+      line-height: 130%;
+      font-weight: 700;
     }
   }
 }
