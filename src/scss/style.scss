@@ -55,17 +55,6 @@
         max-width: 350px;
         padding: 20px 0 30px;
       }
-      &--button{
-        font-size: 20px;
-        line-height: 100%;
-        font-weight: 700;
-        padding: 20px 32px;
-        cursor: pointer;
-        background: $color-red;
-        border-color: $color-red;
-        outline: none;
-        border-radius: 6px;
-      }
     }
   }
   &-bottom{
@@ -159,7 +148,8 @@
 
 
 .question,
-.work{
+.work,
+.certificat{
   &-top{
     display: flex;
     justify-content: space-between;
@@ -187,12 +177,52 @@
       width: 260px;
       height: 360px;
       object-fit: cover;
+      cursor: pointer;
     }
   }
 }
-.work-content__img{
+.work{
+  margin-bottom: 100px;
+  &-content__img{
   width: 360px;
   height: 300px;
+  }
+}
+
+.consultation{
+  position: relative;
+  &-img{
+    position: absolute;
+    bottom: 0;
+  }
+  &-inner{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid $color-gray;
+    box-shadow: 0px 10px 40px rgba(116, 18, 18, 0.05);
+border-radius: 6px;
+padding: 60px 30px 80px;
+  }
+  &-content{
+    &__title {
+    font-weight: 400;
+  }
+  &__form{
+      margin-top: 40px;
+    }
+    &__input{
+      font-size: 20px;
+      line-height: 100%;
+      font-weight: 700;
+      padding: 20px 10px;
+      max-width: 200px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 6px;
+      
+    }
+  }
 }
 
 @import 'media';
