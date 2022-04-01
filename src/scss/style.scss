@@ -1,3 +1,86 @@
-h1 {
-  color: orange
+@import 'vars';
+@import 'reset';
+@import 'global';
+
+
+.header{
+  height: 100vh;
+  background-image: url('@img/header_img.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center right;
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--link{
+        color: $color-gray;
+        margin-right: 50px;
+        &:hover{
+          border-bottom: 1px solid $color-gray;
+        }
+      }
+    }
+    &__contacts{
+      &--tel{
+        line-height: 100%;
+        display: flex;
+        justify-content: right;
+      }
+      &--call{
+        line-height: 100%;
+        cursor: pointer;
+        &:hover{
+          border-bottom: 1px solid $color-gray;
+        }
+      }
+    }
+    &__dscr{
+      max-width: 526px;
+      padding: 100px 0;
+      &--title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 130%;
+        color: $color-gray;
+      }
+      &--subtitle{
+        font-size: 20px;
+        color: $color-gray;
+        max-width: 350px;
+        padding: 20px 0 30px;
+      }
+      &--button{
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 700;
+        padding: 20px 32px;
+        cursor: pointer;
+        background: $color-red;
+        border-color: $color-red;
+        outline: none;
+        border-radius: 6px;
+      }
+    }
+  }
+  &-bottom{
+    display: flex;
+    &__block{
+      padding-left: 15px;
+      border-left: 1px solid $color-gray;
+      margin-right: 40px;
+      &--text{
+        line-height: 120%;
+        color: $color-gray;
+        max-width: 140px;
+        padding-top: 18px;
+      }
+    }
+
+  }
 }
