@@ -253,4 +253,47 @@ padding: 60px 30px 80px;
   }
 }
 
+.footer{
+  position: relative;
+  &-contacts{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 30px;
+    max-width: 510px;
+    background: $color-gray;
+    &__title{
+      color: #333;
+      margin-bottom: 25px;
+    }
+    &__tel,
+    &__mail{
+      color: #4f4f4f;
+      font-size: 20px;
+      display: block;
+    }
+    &__adres{
+      display: block;
+      font-size: 16px;
+      color: #4f4f4f;
+      margin: 25px 0 34px;
+    }
+    &__social{
+      &--link{
+        margin-right: 20px;
+        
+        &:hover{
+          transition: all .3s;
+          svg{
+            
+            path{
+              fill:#C9000B; 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @import 'media';
