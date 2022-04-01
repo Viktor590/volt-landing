@@ -31,4 +31,8 @@ body{
         border-color: $color-red;
         outline: none;
         border-radius: 6px;
+        transition: all .3s;
+        &:hover{
+          background:#C9000C;
+        }
 }

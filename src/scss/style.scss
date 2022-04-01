@@ -9,6 +9,10 @@
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center right;
+  position: relative;
+  &-burger__menu{
+        display: none;
+      }
   &-top{
     display: flex;
     justify-content: space-between;
