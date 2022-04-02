@@ -39,7 +39,5 @@ const slider = (leftArrow, rightArrow, img) => {
   })
 
 
-
-
 }
 export default slider;

@@ -1,6 +1,7 @@
 import burgerMenu from "./modules/burgerMenu.js";
 import resizeImg from "./modules/resizeImg.js";
 import slider from "./modules/slider.js";
+import tabs from "./modules/tabs.js";
 
 window.addEventListener('DOMContentLoaded', () => {
   burgerMenu();
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   slider('.reviews-top__arrows--left', '.reviews-top__arrows--right', '.reviews-content__img');
   slider('.work-top__arrows--left', '.work-top__arrows--right', '.work-content__img');
   slider('.certificat-top__arrows--left', '.certificat-top__arrows--right', '.certificat-content__img');
+  tabs();
 
 })
 
