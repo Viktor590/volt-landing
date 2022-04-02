@@ -212,6 +212,11 @@
 }
 
 @media(max-width: 500px) {
+  .reviews-top__arrows.hidden{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    }
   .header{
     background-image: none;
     &-bottom{
@@ -264,11 +269,7 @@
       justify-content: center;
       &__arrows{
         display: none;
-        &--hidden{
-          display: flex;
-          justify-content: center;
-          margin-top: 30px;
-        }
+        
       }
     }
   }

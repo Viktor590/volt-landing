@@ -152,6 +152,10 @@
   }
 }
 
+.reviews-top__arrows.hidden{
+    display: none;
+  }
+
 
 .reviews,
 .work,
@@ -172,15 +176,16 @@
         cursor: pointer;
         max-width: 100px;
       }
-      &--hidden{
-        display: none;
-      }
+      
     }
   }
   &-content{
     display: flex;
     overflow: hidden;
     &__img{
+      position: relative;
+      left: 0;
+      transition: all ease .3s;
       margin-right: 20px;
       border-radius: 6px;
       width: 260px;
@@ -304,7 +309,6 @@ padding: 60px 30px 80px;
     }
   }
 }
-
 .big-img__wrapper{
   position: fixed;
   width: 100%;

@@ -18,28 +18,26 @@ const resizeImg = (block, wrapper) => {
     })
   });
 
+  const bigImg = document.createElement('img');
+  bigImg.classList.add('big-img');
+
   function hideContent() {
     document.body.style.cssText = `
         overflow: ;
         margin-right: ;
       `;
     wrapperImg.style.display = 'none';
+    bigImg.remove();
   }
 
-  function showBigImages(index) {
+  function createImg(index) {
+    bigImg.src = `${images[index].getAttribute('src')}`;
 
     const x = Math.round(wrapperImg.clientWidth / 2);
     const y = Math.round(wrapperImg.clientHeight / 2);
 
-    const src = images[index].getAttribute('src');
-
-    const bigImg = document.createElement('img');
-    bigImg.classList.add('big-img');
-    bigImg.src = `${src}`;
-
     bigImg.style.cssText = `
       position: absolute;
-      transition: all .3s;
       width: ${x}px;
       height: ${y}px;
       top: ${y / 2}px;
@@ -47,6 +45,11 @@ const resizeImg = (block, wrapper) => {
       border-radius: 10px;
       z-index: 100;
     `
+  }
+
+  function showBigImages(index) {
+    createImg(index)
+
     wrapperImg.appendChild(bigImg);
 
     document.addEventListener('click', (e) => {
