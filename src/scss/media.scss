@@ -61,6 +61,7 @@
         border-bottom-left-radius: 50%;
       }
       &.active{
+        z-index: 100;
         .header-burger__span{
           display: none;
         }

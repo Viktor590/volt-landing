@@ -3,10 +3,13 @@
   line-height: 160%;
   font-weight: 400;
   color: $color-white;
+  scroll-behavior: smooth;
 }
 body{
   background: $bg;
+  position: relative;
 }
+
 
 .container{
   max-width: 1100px;
