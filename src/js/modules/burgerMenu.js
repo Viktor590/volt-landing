@@ -25,6 +25,7 @@ const burgerMenu = () => {
     menuBurger.style.display = 'flex';
     container.style.paddingRight = '0';
     document.body.style.overflow = 'hidden';
+
   }
 
   function hiddenMenu() {

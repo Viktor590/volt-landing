@@ -214,6 +214,24 @@
     }
   }
 }
+.calculator-slider__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.calculator-wrapper{
+  &__label{
+  width: 100%;
+}
+}
+.calculator-bottom__error--text{
+  padding-left: 5px;
+  font-size: 12px;
+}
+.calculator-label {
+  font-size: 14px;
+  span::before{
+  top: 1px;
+}}
 }
 
 @media(max-width: 500px) {

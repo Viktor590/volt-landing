@@ -37,18 +37,15 @@ const sendForm = (formBlock, inputBlock, content) => {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    const formData = new FormData(form);
     form.remove();
 
     contentBlock.append(resultMessage);
     resultMessage.textContent = message.loading;
 
-    const formData = new FormData(form);
-
-
     postData('server.php', formData)
       .then(res => {
-        console.log(res);
+        console.log(formData);
         resultMessage.textContent = message.success;
       })
       .catch(err => {

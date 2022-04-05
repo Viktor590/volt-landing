@@ -345,7 +345,7 @@
             инженера и получите полный расчет
             стоимости комплектующих и установки
           </p>
-          <form class="consultation-content__form" required>
+          <form class="consultation-content__form" action="#">
 
             <input class="consultation-content__input" type="text" placeholder="Ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$"
               value="" required>
@@ -543,60 +543,165 @@
   </div>
 
   <div class="calculator">
-    <h3 class="calculator-title ">
-      Рассчитайте стоимость установки защиты
-    </h3>
-    <div class="calculator-slider">
-      <div class="calculator-slider__item">
-        <h2 class="calculator-slider__title title">
-          Какой вид необходимо защитить?
-        </h2>
-        <div class="calculator-slider__item--content">
-          <div class="calculator-wrapper__label">
-            <label class="calculator-label">
-              <input class="calculator-content__checkbox" type="checkbox">
-              Частный дом
-              <span></span>
-            </label>
+    <img class="calculator-close" src="@img/close.svg" alt="close">
+    <div class="calculator-wrapper">
+      <h3 class="calculator-title ">
+        Рассчитайте стоимость установки защиты
+      </h3>
+      <div class="calculator-slider">
+        <div class="calculator-slider__item">
+          <div class="calculator-slider__item--content">
+            <h2 class="calculator-slider__title title">
+              Какой вид необходимо защитить?
+            </h2>
+            <div class="calculator-slider__wrapper">
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="home" type="checkbox">
+                  Частный дом
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="warehouse" type="checkbox">
+                  Склад
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="production" type="checkbox">
+                  Производственное помещение
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="garage" type="checkbox">
+                  Гараж
+                  <span></span>
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="calculator-wrapper__label">
-            <label class="calculator-label">
-              <input class="calculator-content__checkbox" type="checkbox">
-              Склад
-              <span></span>
-            </label>
+          <div class="calculator-slider__item--content">
+            <h2 class="calculator-slider__title title">
+              Где нужно заменить?
+            </h2>
+            <div class="calculator-slider__wrapper">
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="inHome" type="checkbox">
+                  В доме
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="street" type="checkbox">
+                  На улице
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="roof" type="checkbox">
+                  На крыше
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="basement" type="checkbox">
+                  В подвале
+                  <span></span>
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="calculator-wrapper__label">
-            <label class="calculator-label">
-              <input class="calculator-content__checkbox" type="checkbox">
-              Производственное помещение
-              <span></span>
-            </label>
+          <div class="calculator-slider__item--content">
+            <h2 class="calculator-slider__title title">
+              Кому это сделать?
+            </h2>
+            <div class="calculator-slider__wrapper">
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="state" type="checkbox">
+                  Государству
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="individual" type="checkbox">
+                  Физ.лицо
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="entity" type="checkbox">
+                  Юр.лицо
+                  <span></span>
+                </label>
+              </div>
+              <div class="calculator-wrapper__label">
+                <label class="calculator-label">
+                  <input class="calculator-content__checkbox input" value="pensioner" type="checkbox">
+                  Пенсионеру
+                  <span></span>
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="calculator-wrapper__label">
-            <label class="calculator-label">
-              <input class="calculator-content__checkbox" type="checkbox">
-              Гараж
-              <span></span>
-            </label>
+          <div class="calculator-slider__item--content">
+            <h2 class="calculator-slider__title title">
+              Контактные данные
+            </h2>
+            <div class="calculator-slider__form">
+
+              <label for="name" class="calculator-label">
+                Имя
+              </label>
+              <input class="calculator-form__input input" id="name" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" value=""
+                required>
+
+              <label for="phone" class="calculator-label">
+                Телефон
+              </label>
+              <input class="calculator-form__input input" value="" id="phone" type="tel" pattern="[0-9]{11}" required>
+
+              <label for="mail" class="calculator-label">
+                Email
+              </label>
+              <input class="calculator-form__input input" id="mail" type="email" value=""
+                pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required>
+
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="calculator-bottom">
-      <div class="calculator-progres">
-        <p class="calculator-progres__text">Готово: <span class="calculator-progres__num"></span></p>
-        <progress max="100" value="70">70%</progress>
+      <div class="calculator-bottom">
+        <div class="calculator-progres">
+          <p class="calculator-progres__text">Готово: <span class="calculator-progres__num">0%</span></p>
+          <progress max="100" value="0"></progress>
+        </div>
+        <h4 class="calculator-bottom__error--text">
+          Выберите категорию
+        </h4>
+        <button class="calculator-slider__button--next" disabled>
+          Далее <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 7.19873H14M14 7.19873L8.57534 1.69873M14 7.19873L8.57534 12.6987" stroke="white"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
       </div>
-      <h4 class="calculator-bottom__error--text">
-        Выберите категорию
-      </h4>
-      <button class="calculator-slider__button--next" disabled>
-        Далее <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 7.19873H14M14 7.19873L8.57534 1.69873M14 7.19873L8.57534 12.6987" stroke="white" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-      </button>
+    </div>
+    <div class="finish-block">
+      <h2 class="finish-text">
+        Спасибо, сважемся с вами в ближайшее время
+      </h2>
     </div>
   </div>
   <script src="js/app.min.js"></script>
