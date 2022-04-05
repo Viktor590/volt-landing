@@ -18,13 +18,13 @@
         <a href="#reviews" class="header-top__nav--link">Отзывы</a>
         <a href="#work" class="header-top__nav--link">Наши работы</a>
         <a href="#question" class="header-top__nav--link">Вопрос ответ</a>
-        <div class="header-top__contacts">
-          <a class="header-top__contacts--tel" href="tel:+78005554480">
+        <div class="header-top__contacts--burger">
+          <a class="header-top__contacts--tel header-top__nav--link" href="tel:+78005554480">
             +7 800 555 44 80
           </a>
-          <p class="header-top__contacts--call">
+          <a href="#consultation" class="header-top__contacts--call header-top__nav--link">
             Заказать обратный звонок
-          </p>
+          </a>
         </div>
       </div>
       <nav class="header-top">
@@ -42,9 +42,9 @@
           <a class="header-top__contacts--tel" href="tel:+78005554480">
             +7 800 555 44 80
           </a>
-          <p class="header-top__contacts--call">
+          <a href="#consultation" class="header-top__contacts--call">
             Заказать обратный звонок
-          </p>
+          </a>
         </div>
         <div class="header-burger">
           <div class="header-burger__span"></div>
@@ -236,8 +236,23 @@
           Отзывы о работе с нами
         </h2>
         <div class="reviews-top__arrows">
-          <img class="reviews-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-          <img class="reviews-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+
+          <button class="reviews-top__arrows--left" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
+
+          <button class="reviews-top__arrows--right" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
+
         </div>
       </div>
       <div class="reviews-content">
@@ -252,8 +267,21 @@
       </div>
 
       <div class="reviews-top__arrows hidden">
-        <img class="reviews-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-        <img class="reviews-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+        <button class="reviews-top__arrows--left" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
+
+        <button class="reviews-top__arrows--right" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -263,8 +291,21 @@
           Фото готовых работ
         </h2>
         <div class="work-top__arrows">
-          <img class="work-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-          <img class="work-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+          <button class="work-top__arrows--left" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
+
+          <button class="work-top__arrows--right" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
       </div>
       <div class="work-content">
@@ -277,12 +318,25 @@
         <img class="work-content__img" src="@img/works_img/1.png" alt="question">
       </div>
       <div class="reviews-top__arrows hidden">
-        <img class="work-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-        <img class="work-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+        <button class="work-top__arrows--left" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
+
+        <button class="work-top__arrows--right" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
     </div>
 
-    <div class="consultation">
+    <div class="consultation" id="consultation">
       <img class="consultation-img" src="@img/human.png" alt="human">
       <div class="consultation-inner">
         <div class="consultation-content">
@@ -291,11 +345,13 @@
             инженера и получите полный расчет
             стоимости комплектующих и установки
           </p>
-          <form class="consultation-content__form">
+          <form class="consultation-content__form" required>
+
             <input class="consultation-content__input" type="text" placeholder="Ваше имя" pattern="^[A-Za-zА-Яа-яЁё]+$"
+              value="" required>
+            <input class="consultation-content__input" type="tel" placeholder="Ваш телефон" pattern="[0-9]{11}" value=""
               required>
-            <input class="consultation-content__input" type="tel" placeholder="Ваш телефон" pattern="[0-9]{11}"
-              required>
+
             <input class="consultation-content__btn button" type="submit" value="Заказать"></input>
           </form>
         </div>
@@ -310,8 +366,21 @@
           в независимых лабораториях
         </h2>
         <div class="certificat-top__arrows">
-          <img class="certificat-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-          <img class="certificat-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+          <button class="certificat-top__arrows--left" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
+
+          <button class="certificat-top__arrows--right" type="button">
+            <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.4"
+                d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
       </div>
       <div class="certificat-content">
@@ -324,8 +393,21 @@
         <img class="certificat-content__img" src="@img/certificat_img/1.jpg" alt="certificat">
       </div>
       <div class="reviews-top__arrows hidden">
-        <img class="certificat-top__arrows--left" src="@img/arrow-left.svg" alt="arrow-left">
-        <img class="certificat-top__arrows--right" src="@img/arrow-right.svg" alt="arrow-right">
+        <button class="certificat-top__arrows--left" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
+
+        <button class="certificat-top__arrows--right" type="button">
+          <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path opacity="0.4"
+              d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -440,7 +522,27 @@
   </footer>
 
   <div class="big-img__wrapper">
+    <img class="big-img__close" src="@img/close.svg" alt="close">
+    <div class="big-img__arrows">
+      <button class="big-img__arrows--left" type="button">
+        <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4"
+            d="M0.292892 8.7071C-0.0976334 8.31657 -0.0976333 7.68341 0.292893 7.29288L6.65685 0.928924C7.04738 0.5384 7.68054 0.5384 8.07107 0.928924C8.46159 1.31945 8.46159 1.95261 8.07107 2.34314L2.41422 7.99999L8.07107 13.6568C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.7071ZM1 6.99999L101 7L101 9L1 8.99999L1 6.99999Z"
+            fill="white" />
+        </svg>
+      </button>
+
+      <button class="big-img__arrows--right" type="button">
+        <svg width="101" height="16" viewBox="0 0 101 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4"
+            d="M100.707 8.7071C101.098 8.31657 101.098 7.68341 100.707 7.29288L94.3431 0.928924C93.9526 0.5384 93.3195 0.5384 92.9289 0.928924C92.5384 1.31945 92.5384 1.95261 92.9289 2.34314L98.5858 7.99999L92.9289 13.6568C92.5384 14.0474 92.5384 14.6805 92.9289 15.0711C93.3195 15.4616 93.9526 15.4616 94.3431 15.0711L100.707 8.7071ZM100 6.99999L-8.74228e-08 7L8.74228e-08 9L100 8.99999L100 6.99999Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
   </div>
+
+
   <script src="js/app.min.js"></script>
 </body>
 

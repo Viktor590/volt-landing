@@ -15,7 +15,7 @@ const slider = (leftArrow, rightArrow, img) => {
   function scrollSlide(num) {
 
     if (num > 0) {
-      currentNum = 0
+      currentNum = 0;
     } else if (Math.abs(num) > maxScrollSize) {
       currentNum = -maxScrollSize
     }

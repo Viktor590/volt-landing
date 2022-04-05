@@ -11,9 +11,13 @@
      &__nav,
      &__contacts{
        display: none;
+       &--tel{
+         justify-content: center;
+       }
      }
      &__nav--link{
        margin-bottom: 30px;
+       margin-right: 0;
        font-size: 20px;
      }
      &__dscr--title{
@@ -87,7 +91,8 @@
     }
   }
 
-  .title{
+  .title,
+  .result-title{
     font-size: 24px;
   }
 
@@ -225,7 +230,11 @@
         padding-left: 10px;
       }
     }
-    &-top__dscr{
+    &-top{
+      &__nav--link{
+        font-size: 12px;
+      }
+      &__dscr{
       &--title{
       font-size: 20px;
       text-align: center;
@@ -241,6 +250,7 @@
     }
     
   }
+}
   }
   .button-wrapper{
     display: flex;
@@ -298,6 +308,33 @@
       top: 0;
       left: 0;
       max-width: 100%;
+    }
+  }
+
+  .big-img{
+
+    &__arrows{
+      height: 40%;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+      &--left,
+      &--right{
+        &:hover{
+          background: none;
+          svg{
+            path{
+              opacity: .4;
+            }
+          }
+        }
+        &:active{
+          svg{
+            path{
+              opacity: .8;
+            }
+          }
+        }
+      }
     }
   }
 }
