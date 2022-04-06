@@ -5,6 +5,8 @@ import slider from "./modules/slider.js";
 import tabs from "./modules/tabs.js";
 import calculator from './modules/calculator.js';
 import question from './modules/question.js';
+import showScrlollElem from "./modules/showScrlollElem.js";
+
 
 window.addEventListener('DOMContentLoaded', () => {
   burgerMenu();
@@ -12,12 +14,13 @@ window.addEventListener('DOMContentLoaded', () => {
   resizeImg('.reviews-content__img', '.big-img__wrapper', '.big-img__arrows--left', '.big-img__arrows--right');
   resizeImg('.work-content__img', '.big-img__wrapper', '.big-img__arrows--left', '.big-img__arrows--right');
   resizeImg('.certificat-content__img', '.big-img__wrapper', '.big-img__arrows--left', '.big-img__arrows--right');
-  slider('.reviews-top__arrows--left', '.reviews-top__arrows--right', '.reviews-content__img');
-  slider('.work-top__arrows--left', '.work-top__arrows--right', '.work-content__img');
-  slider('.certificat-top__arrows--left', '.certificat-top__arrows--right', '.certificat-content__img');
+  slider('.reviews-top__arrows--left', '.reviews-top__arrows--right', '.reviews-content__img', '.reviews-content');
+  slider('.work-top__arrows--left', '.work-top__arrows--right', '.work-content__img', '.work-content');
+  slider('.certificat-top__arrows--left', '.certificat-top__arrows--right', '.certificat-content__img', '.certificat-content');
   tabs();
   sendForm('.consultation-content__form', '.consultation-content__input', '.consultation-content');
   calculator();
   question();
+  showScrlollElem()
 })
 

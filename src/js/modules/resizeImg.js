@@ -3,9 +3,11 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
   const arrowLeft = document.querySelector(arrLeft);
   const arrowRight = document.querySelector(arrRight);
   const wrapperImg = document.querySelector(wrapper);
+  const showArrow = document.querySelector('.tab-arrows__top')
 
   let scrollSize = window.innerWidth - document.documentElement.clientWidth;
-  const trigerClose = document.querySelector('.big-img__close')
+  const trigerClose = document.querySelector('.big-img__close');
+
 
   let srcArr = [];
   let currentIndex = 1;
@@ -48,6 +50,8 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
       el.remove()
     })
     currentIndex = 1;
+    srcArr = [];
+    showArrow.style.display = 'block'
   }
 
   function createImg(img) {
@@ -85,12 +89,17 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
     })
 
     arrImg[currentIndex].style.display = 'block';
-
+    showArrow.style.display = 'none'
     document.addEventListener('click', (e) => {
       if (e.target.classList.contains('big-img__arrows') && !e.target.classList.contains('big-img')) {
         hideContent()
       }
     })
+
+  }
+
+  function loga(e) {
+    console.log(e.keyCode);
   }
 
   trigerClose.addEventListener('click', () => {

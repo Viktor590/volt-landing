@@ -65,7 +65,7 @@ const question = () => {
         }
 
       })
-      console.log(slideNum);
+
       if (el.checked) {
         errorText.style.opacity = 0;
         sendBtn.removeAttribute('disabled');
