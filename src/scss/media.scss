@@ -239,6 +239,9 @@
     height: 70px;
   }
 }
+.big-img__arrows{
+  display: none;
+}
 }
 
 @media(max-width: 500px) {
@@ -336,30 +339,4 @@
     }
   }
 
-  .big-img{
-
-    &__arrows{
-      height: 40%;
-      justify-content: center;
-      -webkit-tap-highlight-color: transparent;
-      &--left,
-      &--right{
-        &:hover{
-          background: none;
-          svg{
-            path{
-              opacity: .4;
-            }
-          }
-        }
-        &:active{
-          svg{
-            path{
-              opacity: .8;
-            }
-          }
-        }
-      }
-    }
-  }
 }

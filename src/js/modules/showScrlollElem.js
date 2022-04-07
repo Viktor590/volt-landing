@@ -4,6 +4,7 @@ const showScrlollElem = () => {
   let height = window.innerHeight;
 
   document.addEventListener('scroll', (e) => {
+
     if (e.target.scrollingElement.scrollTop > height) {
       arrow.style.display = 'block'
     } else {

@@ -1,8 +1,10 @@
 const slider = (leftArrow, rightArrow, img, block) => {
+
   const arrowLeft = document.querySelectorAll(leftArrow);
   const arrowRight = document.querySelectorAll(rightArrow);
   const container = document.querySelector('.container').offsetWidth;
   const images = document.querySelectorAll(img);
+
   const wrapper = document.querySelector(block);
 
   wrapper.addEventListener('touchstart', handleTouchStart)
@@ -12,6 +14,7 @@ const slider = (leftArrow, rightArrow, img, block) => {
   let currentNum = 0;
   let x1 = null;
   let x2 = null;
+
 
   const scrollSize = images[0].clientWidth + 20;
 
@@ -31,6 +34,7 @@ const slider = (leftArrow, rightArrow, img, block) => {
     });
   }
 
+
   arrowLeft.forEach(elem => {
     elem.addEventListener('click', () => {
       scrollSlide(currentNum += scrollSize)
@@ -42,6 +46,7 @@ const slider = (leftArrow, rightArrow, img, block) => {
       scrollSlide(currentNum += -scrollSize)
     })
   })
+
   function handleTouchStart(e) {
     x1 = e.touches[0].clientX
   }
@@ -50,7 +55,7 @@ const slider = (leftArrow, rightArrow, img, block) => {
   }
   function handleTouchEnd() {
     let finishSwipe = x1 - x2;
-    console.log(finishSwipe);
+
     if (finishSwipe > 0) {
       scrollSlide(currentNum += -scrollSize)
     } else {

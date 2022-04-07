@@ -558,28 +558,28 @@
             <div class="calculator-slider__wrapper">
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="home" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="view" value="home" type="checkbox">
                   Частный дом
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="warehouse" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="view" value="warehouse" type="checkbox">
                   Склад
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="production" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="view" value="production" type="checkbox">
                   Производственное помещение
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="garage" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="view" value="garage" type="checkbox">
                   Гараж
                   <span></span>
                 </label>
@@ -593,28 +593,28 @@
             <div class="calculator-slider__wrapper">
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="inHome" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="where" value="inHome" type="checkbox">
                   В доме
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="street" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="where" value="street" type="checkbox">
                   На улице
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="roof" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="where" value="roof" type="checkbox">
                   На крыше
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="basement" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="where" value="basement" type="checkbox">
                   В подвале
                   <span></span>
                 </label>
@@ -628,28 +628,28 @@
             <div class="calculator-slider__wrapper">
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="state" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="toWhom" value="state" type="checkbox">
                   Государству
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="individual" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="toWhom" value="individual" type="checkbox">
                   Физ.лицо
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="entity" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="toWhom" value="entity" type="checkbox">
                   Юр.лицо
                   <span></span>
                 </label>
               </div>
               <div class="calculator-wrapper__label">
                 <label class="calculator-label">
-                  <input class="calculator-content__checkbox input" value="pensioner" type="checkbox">
+                  <input class="calculator-content__checkbox input" name="toWhom" value="pensioner" type="checkbox">
                   Пенсионеру
                   <span></span>
                 </label>
@@ -665,18 +665,19 @@
               <label for="name" class="calculator-label">
                 Имя
               </label>
-              <input class="calculator-form__input input" id="name" type="text" pattern="^[A-Za-zА-Яа-яЁё]+$" value=""
-                required>
+              <input class="calculator-form__input input" name="name" id="name" type="text"
+                pattern="^[A-Za-zА-Яа-яЁё]+$" value="" required>
 
               <label for="phone" class="calculator-label">
                 Телефон
               </label>
-              <input class="calculator-form__input input" value="" id="phone" type="tel" pattern="[0-9]{11}" required>
+              <input class="calculator-form__input input" value="" name="phone" id="phone" type="tel"
+                pattern="[0-9]{11}" required>
 
               <label for="mail" class="calculator-label">
                 Email
               </label>
-              <input class="calculator-form__input input" id="mail" type="email" value=""
+              <input class="calculator-form__input input" name="mail" id="mail" type="email" value=""
                 pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$" required>
 
             </div>

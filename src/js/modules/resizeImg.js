@@ -11,6 +11,12 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
 
   let srcArr = [];
   let currentIndex = 1;
+  let x1 = null;
+  let x2 = null;
+
+  wrapperImg.addEventListener('touchstart', handleTouchStart)
+  wrapperImg.addEventListener('touchmove', handleTouchMove)
+  wrapperImg.addEventListener('touchend', handleTouchEnd)
 
   images.forEach((element, index) => {
     element.addEventListener('click', () => {
@@ -98,10 +104,6 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
 
   }
 
-  function loga(e) {
-    console.log(e.keyCode);
-  }
-
   trigerClose.addEventListener('click', () => {
     hideContent()
   })
@@ -117,6 +119,24 @@ const resizeImg = (block, wrapper, arrLeft, arrRight) => {
   arrowRight.addEventListener('click', () => {
     plusSlides(1)
   })
+
+  function handleTouchStart(e) {
+    x1 = e.touches[0].clientX
+  }
+
+  function handleTouchMove(e) {
+    x2 = e.touches[0].clientX;
+  }
+
+  function handleTouchEnd() {
+    let finishSwipe = x1 - x2;
+
+    if (finishSwipe > 0) {
+      plusSlides(1)
+    } else {
+      plusSlides(-1)
+    }
+  }
 
 }
 export default resizeImg;

@@ -70,7 +70,7 @@ const question = () => {
         errorText.style.opacity = 0;
         sendBtn.removeAttribute('disabled');
       }
-      modalState[i] = el.value;
+      modalState[el.name] = el.value;
 
     })
   });
@@ -93,6 +93,7 @@ const question = () => {
 
   sendBtn.addEventListener('click', () => {
     if (slideNum == slides.length - 1) {
+
       calcBlock.removeChild(calcWrapper);
       createFinishBlock();
 
@@ -102,6 +103,7 @@ const question = () => {
 
       return
     }
+    console.log(modalState);
 
     showSlides(slideNum += 1)
     correctProgress()
